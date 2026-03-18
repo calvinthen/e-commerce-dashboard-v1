@@ -1,3 +1,5 @@
+import { DollarSign, ShoppingBag, Users, Activity } from "lucide-react";
+import MetricCard from "./components/MetricCard"
 import SalesChart from "./components/SalesChart"
 import Sidebar from "./components/Sidebar"
 import Topbar from "./components/Topbar"
@@ -17,14 +19,34 @@ function App() {
               Dashboard Overview
             </h1>
 
-            <div className="h-96 border-2 border-dashed border-slate-300 rounded-xl flex items-center justify-center text-slate-400">
-              Temporary data
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <MetricCard 
+                title="Total Revenue" value="$45,231.89" trend="20.1%" isPositive={true} 
+                icon={<DollarSign size={24} />} 
+              />
+
+              <MetricCard 
+                title="Active Users" value="+2,350" trend="10.5%" isPositive={true} 
+                icon={<Users size={24} />} 
+              />
+
+              <MetricCard
+                title="Total Sales" value="+12,234" trend="4.2%" isPositive={true}
+                icon={<ShoppingBag size={24}/>}
+              />
+
+              <MetricCard
+                title="Bounce Rate " value="24.5%" trend="2.1%" isPositive={true}
+                icon={<Activity size={24}/>}
+              />
+
             </div>
 
-            <div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <SalesChart/>
 
-              <div>
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm col-span-1 flex items-center justify-center text-slate-400 border-dashed">
                 Recent Sales Widget Go Here
               </div>
             </div>

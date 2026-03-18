@@ -19,6 +19,7 @@ const MetricCard = ({title, value, trend, isPositive, icon}: MetricCardProps) =>
                 <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
                     {icon}
                 </div>
+                
             </div>
 
             <div>
