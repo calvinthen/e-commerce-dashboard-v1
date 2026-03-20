@@ -3,6 +3,7 @@ import MetricCard from "./components/MetricCard"
 import SalesChart from "./components/SalesChart"
 import Sidebar from "./components/Sidebar"
 import Topbar from "./components/Topbar"
+import RecentSales from "./components/RecentSales";
 
 function App() {
   return (
@@ -46,9 +47,7 @@ function App() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <SalesChart/>
 
-              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm col-span-1 flex items-center justify-center text-slate-400 border-dashed">
-                Recent Sales Widget Go Here
-              </div>
+              <RecentSales/>
             </div>
           </div>
 
