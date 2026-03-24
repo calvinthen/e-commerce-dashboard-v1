@@ -4,6 +4,7 @@ import SalesChart from "./components/SalesChart"
 import Sidebar from "./components/Sidebar"
 import Topbar from "./components/Topbar"
 import RecentSales from "./components/RecentSales";
+import RecentOrders from "./components/RecentOrders";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
 
               <RecentSales/>
             </div>
+            <RecentOrders/>
           </div>
 
          </main>
